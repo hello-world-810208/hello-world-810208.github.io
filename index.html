@@ -5,9 +5,28 @@
 		<title>網站架設</title>
 	</head>
 	
-	<body style="background-color:floralwhite">
-       
+	<body id="f">
+        <script>
+            function dark(){
+                document.getElementById("f").style.background = "#ABABAB";
+                var light = document.getElementById("light");
+                light.style.display="block";
+                var dark = document.getElementById("dark");
+                dark.style.display="none";
+            }
+            function light(){
+                document.getElementById("f").style.background = "#fafafa";
+                var light = document.getElementById("light");
+                light.style.display="none";
+                var dark = document.getElementById("dark");
+                dark.style.display="block";
+            }   
+        </script>
         <style>
+            #light{
+                display: none;
+                
+            }
             .al{
                 width: 150px;
             }
@@ -36,6 +55,7 @@
                 display: block;
                 margin: auto;
             }
+
             #circle{
                 width: 150px;
                 height: 150px;
@@ -75,23 +95,25 @@
                     animation-delay: 1s;
                 }
                 }
+            
          } 
             
         </style>
         <strong><h1 class="bl" style="text-align: center">從零開始的網站架設</h1></strong>
         <div class="gl" id="circle"> 架設 網站</div>
         <h1 class="cl" style="position:relative;left:1200px">使用</h1>
-        <br>
-        <br>
-        <br>
+        <br><br><br>
         <img class="al" src="5847f5bdcef1014c0b5e489c.png" style="position:relative;left:1300px;top:-91px;"  alt="">
         <img alt="" class="al" src="css.png" style="position:relative;left:900px;top:-90px">
+        <br>
+        <button id="dark" onclick="dark()">夜間模式</button>
+        <button id="light" onclick="light()">日間模式</button>
         <hr>
         <h1>1.如何創建自己的網站七步驟</h1>
         <hr>
         <h2 class=gl>第一步：建立一個自己的github帳號</h2>
         <br>
-        <a href="https://github.com/" style="font-size: 30px;text-decoration:none">-github網站</a>
+        <p style="text-align:center"><a href="https://github.com/" style="font-size: 30px;text-decoration:none">-github網站</a></p>
         <br>
         <img alt="" src="2020-12-19_LI.jpg" class="el">
         <h2 class="gl">第二步：點擊創建一個新專案</h2>
@@ -121,7 +143,7 @@
         <h1>2.如何編輯</h1>
         <hr>
         <h2 class="gl">下載編輯器Adobe Brackets</h2>
-        <a href="http://brackets.io/" style="font-size: 30px;text-decoration:none">-Adobe Brackets網址</a>
+        <p style="text-align: center"><a href="http://brackets.io/" style="font-size: 30px; text-decoration:none; ">-Adobe Brackets網址</a></p>
         <br>
         <h2 class="gl">把code按圖片上順序下載下來</h2>
         <img alt="" src="2020-12-20%20(6).png" class="el">
@@ -129,7 +151,7 @@
         <h2 class="gl">在Adobe Brackets打開後就可以編輯(用HTML&Css&Javascript)了</h2>
         <br>
         <h1 class="gl">學習html&css&Javascript網址</h1>
-        <a class="dl" href="https://www.freecodecamp.org/" style="text-decoration:none">-freecodecamp</a>
+        <p style="text-align:center"><a class="dl" href="https://www.freecodecamp.org/" style="text-decoration:none">-freecodecamp</a></p>
         <hr>
         <h1>3.如何上傳</h1>
         <hr>
