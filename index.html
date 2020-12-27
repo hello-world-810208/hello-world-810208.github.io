@@ -20,12 +20,17 @@
                 light.style.display="none";
                 var dark = document.getElementById("dark");
                 dark.style.display="block";
-            }   
+            }
+            window.onfocus = function () {
+                document.title = '網站架設';
+            }
+            window.onblur = function () {
+                document.title = '你離我而去Q_Q';
+            }
         </script>
         <style>
             #light{
                 display: none;
-                
             }
             .al{
                 width: 150px;
@@ -54,6 +59,10 @@
                 width:300px;
                 display: block;
                 margin: auto;
+            }
+            .il{
+                background-color: cornflowerblue;
+                font-size: 20px;
             }
 
             #circle{
@@ -106,8 +115,8 @@
         <img class="al" src="5847f5bdcef1014c0b5e489c.png" style="position:relative;left:1300px;top:-91px;"  alt="">
         <img alt="" class="al" src="css.png" style="position:relative;left:900px;top:-90px">
         <br>
-        <button id="dark" onclick="dark()">夜間模式</button>
-        <button id="light" onclick="light()">日間模式</button>
+        <p style="width:70px"><button class="il" id="dark" onclick="dark()">夜間模式</button></p>
+        <p style="width:70px"><button class="il" id="light" onclick="light()">日間模式</button></p>
         <hr>
         <h1>1.如何創建自己的網站七步驟</h1>
         <hr>
@@ -162,7 +171,6 @@
         <img alt="" src="2020-12-20%20(8)_LI.jpg" class="el">
         <hr>
         <img alt="" src="%E4%B8%8B%E8%BC%89.jpg" class="hl">
-        <h3 class="gl">作者:j0711please</h3>
+        <h3 onmousedown="alert('不要戳我辣!')" class="gl">作者:j0711please</h3>
 	</body>　
-	
 </html>
