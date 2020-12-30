@@ -7,6 +7,7 @@
 	
 	<body id="f">
         <script>
+            var i=0;
             function dark(){
                 document.getElementById("f").style.background = "#ABABAB";
                 var light = document.getElementById("light");
@@ -26,6 +27,27 @@
             }
             window.onblur = function () {
                 document.title = '你離我而去Q_Q';
+            }
+            function hi(){
+                i++;
+                document.getElementById("ii").innerHTML=i;
+                if(i=== 20){
+                    alert('別無聊了!');
+                }
+                if(i==40){
+                    alert("不要再點了");
+                }
+                if(i===60){
+                    alert("別yjo4c.要4ru/ㄅ3el4");
+                }
+                if(i===80){
+                    alert("h8f#65gkjfd;lhjpoawyur3ojh92yhnoig\dh?@#%BKJ^");
+                }
+                if(i===100){
+                    for(var p=0;p<100;p++){
+                        document.write(<br>Math.floor(Math.random()*9));
+                    } 
+                }
             }
         </script>
         <style>
@@ -172,5 +194,7 @@
         <hr>
         <img alt="" src="%E4%B8%8B%E8%BC%89.jpg" class="hl">
         <h3 onmousedown="alert('不要戳我辣!')" class="gl">作者:j0711please</h3>
-	</body>　
+        <button style="background-color:forestgreen;font-size: 30px" onclick="hi()">+1</button>
+        <p style="font-size: 30px" id="ii">0</p>
+	</body>
 </html>
